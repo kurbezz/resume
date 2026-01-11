@@ -1,0 +1,305 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Bulat Kurbanov",
+    "label": "Backend Developer",
+    "email": "me@kurbezz.me",
+    "url": "",
+    "summary": "Backend Developer with 7 years of experience in web development, specializing in RESTful APIs, database management, and test-driven development. Committed to continuous self-improvement and active open-source contributor.",
+    "location": {
+      "countryCode": "RU",
+      "address": ""
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "bulat-kurbanov-1089ab146",
+        "url": "https://www.linkedin.com/in/bulat-kurbanov-1089ab146/"
+      },
+      {
+        "network": "GitHub",
+        "username": "kurbezz",
+        "url": "https://github.com/kurbezz"
+      },
+      {
+        "network": "Telegram",
+        "username": "kurbezz",
+        "url": "https://t.me/kurbezz"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Spines",
+      "position": "Full Stack Developer",
+      "startDate": "2024-06-01",
+      "summary": "",
+      "highlights": [
+        "Design and optimize architectural solutions for a service using React and Node.js, improving performance and maintainability.",
+        "Develop new microservices with FastAPI, ensuring scalability and efficiency.",
+        "Maintain and enhance existing services built with Django and FastAPI, optimizing code quality and performance.",
+        "Improve CI/CD pipelines and infrastructure to enhance deployment speed and reliability.",
+        "Orchestrated the end-to-end migration of services and data from AWS to Azure, achieving minimal downtime and ensuring system stability."
+      ],
+      "url": ""
+    },
+    {
+      "name": "Speechki",
+      "position": "Python Backend Developer",
+      "startDate": "2021-09-01",
+      "endDate": "2024-04-01",
+      "summary": "",
+      "highlights": [
+        "Developed and maintained backend services using Django and FastAPI.",
+        "Worked with PostgreSQL (PL/pgSQL), Redis, RabbitMQ, Docker, and Amazon Web Services (AWS).",
+        "Authored a high-performance library in Rust for Python applications.",
+        "Wrote unit and integration tests using Pytest."
+      ],
+      "url": ""
+    },
+    {
+      "name": "CS GROUP",
+      "position": "Head of Software Development",
+      "startDate": "2021-01-01",
+      "endDate": "2021-06-01",
+      "summary": "",
+      "highlights": [
+        "Led project planning, team mentoring, and code reviews to ensure high-quality development.",
+        "Managed and optimized software development, testing, and deployment workflows.",
+        "Implemented Agile methodologies, increasing team productivity and collaboration."
+      ],
+      "url": ""
+    },
+    {
+      "name": "CS GROUP",
+      "position": "Senior Full Stack Developer",
+      "startDate": "2020-02-01",
+      "endDate": "2020-12-01",
+      "summary": "",
+      "highlights": [
+        "Developed scalable backend services using Django and Django REST Framework.",
+        "Built responsive frontend components with Vue.js.",
+        "Developed and deployed a cross-platform mobile application using Flutter and Dart.",
+        "Designed and implemented automated CI/CD pipelines using GitLab CI/CD and GitHub Actions.",
+        "Worked with PostgreSQL, Redis, RabbitMQ, and Docker to enhance system performance.",
+        "Designed and maintained unit and integration tests using Pytest, ensuring code reliability."
+      ],
+      "url": ""
+    },
+    {
+      "name": "Zarnitza",
+      "position": "Full Stack Developer",
+      "startDate": "2019-02-01",
+      "endDate": "2020-02-01",
+      "summary": "",
+      "highlights": [
+        "Developed and maintained backend services using Django and Django REST Framework.",
+        "Designed and optimized database schemas in PostgreSQL to improve performance and scalability.",
+        "Developed frontend components and user interfaces using JavaScript and Vue.js."
+      ],
+      "url": ""
+    },
+    {
+      "name": "DIA.LOG",
+      "position": "Software Developer",
+      "startDate": "2018-03-01",
+      "endDate": "2019-12-01",
+      "summary": "",
+      "highlights": [
+        "Developed and maintained backend service using Flask.",
+        "Designed and built an Android application using Java/Kotlin."
+      ],
+      "url": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "Kazan National Research Technical University named after A. N. Tupolev - KAI",
+      "area": "Computational and Applied Mathematics",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2016-01-01",
+      "endDate": "2018-01-01",
+      "score": "Incompleted",
+      "courses": []
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "level": "",
+      "keywords": [
+        "Python (Expert)",
+        "Rust (Advanced)"
+      ]
+    },
+    {
+      "name": "Frameworks",
+      "level": "",
+      "keywords": [
+        "Django (Expert)",
+        "Django REST Framework (DRF) (Expert)",
+        "FastAPI (Advanced)"
+      ]
+    },
+    {
+      "name": "Testing",
+      "level": "",
+      "keywords": [
+        "Pytest (Advanced)"
+      ]
+    },
+    {
+      "name": "Databases",
+      "level": "",
+      "keywords": [
+        "PostgreSQL (Advanced)",
+        "Redis (Intermediate)"
+      ]
+    },
+    {
+      "name": "Messaging and Queues",
+      "level": "",
+      "keywords": [
+        "RabbitMQ (Intermediate)"
+      ]
+    },
+    {
+      "name": "Containerization and Orchestration",
+      "level": "",
+      "keywords": [
+        "Docker (Advanced)",
+        "Docker Swarm (Intermediate)"
+      ]
+    },
+    {
+      "name": "Cloud Technologies",
+      "level": "",
+      "keywords": [
+        "Amazon Web Services (AWS) (Intermediate)"
+      ]
+    },
+    {
+      "name": "DevOps Tools",
+      "level": "",
+      "keywords": [
+        "GitLab CI/CD",
+        "GitHub Actions"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "ChatGPT voiceover plugin",
+      "description": "Developed a plugin for ChatGPT that converts text to speech using the Speechki API.",
+      "highlights": [
+        "Quickly launched a B2C service and integrated it with ChatGPT, which became one of the first 15 third-party plugins presented in the ChatGPT plugin store."
+      ],
+      "keywords": [
+        "Python",
+        "FastAPI",
+        "SQLAchemy",
+        "Vue"
+      ],
+      "url": "",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "Speechki",
+      "type": "application"
+    },
+    {
+      "name": "Image Text Drawing Library",
+      "description": "Wrote a library for drawing text on images using Rust.",
+      "highlights": [
+        "Accelerated image creation with text by 40 times. Excellent support for languages such as Indic, Arabic, Thai and Lao, Khmer, Myanmar, Tibetan, Hangul, Hebrew, and many others."
+      ],
+      "keywords": [
+        "Rust",
+        "Python",
+        "HarfBuzz"
+      ],
+      "url": "",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "Speechki",
+      "type": "library"
+    },
+    {
+      "name": "Insulin Pump Management Application and Backend",
+      "description": "Developed an application and backend for managing an insulin pump based on the OpenAPS project.",
+      "highlights": [
+        "Improved the quality of life for people with diabetes."
+      ],
+      "keywords": [
+        "Flask",
+        "Java",
+        "Kotlin"
+      ],
+      "url": "",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "DIA.LOG",
+      "type": "application"
+    },
+    {
+      "name": "Internal Logistic Management System",
+      "description": "Developed a system for automating internal logistics within the company. The system allows tracking order status, managing warehouse inventory, and handling accounting.",
+      "highlights": [
+        "Reduced order processing time, improved reporting, and enhanced inventory control."
+      ],
+      "keywords": [
+        "Django",
+        "DRF",
+        "Vue",
+        "PostgreSQL"
+      ],
+      "url": "",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "CS GROUP",
+      "type": "application"
+    },
+    {
+      "name": "Mobile Application for Drivers",
+      "description": "Developed a mobile application for drivers to manage routes and order statuses.",
+      "highlights": [
+        "Automated the process of managing order statuses and routes within the company."
+      ],
+      "keywords": [
+        "Flutter",
+        "Dart"
+      ],
+      "url": "",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "CS GROUP",
+      "type": "application"
+    },
+    {
+      "name": "Internal Order Managment System",
+      "description": "Developed a system for managing orders and sales.",
+      "highlights": [
+        "Reduced the number of late order shipments by 30%."
+      ],
+      "keywords": [
+        "Django",
+        "PostgreSQL"
+      ],
+      "url": "",
+      "roles": [
+        "Developer"
+      ],
+      "entity": "Zarnitza",
+      "type": "application"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
+    "version": "v1.0.0",
+    "lastModified": "2025-01-27T12:00:00"
+  }
+}

@@ -1,0 +1,39 @@
+# Generated files
+resume.html
+resume.pdf
+public/
+dist/
+build/
+
+# Node modules
+node_modules/
+
+# Dependencies
+package-lock.json
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+._*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Temporary
+*.tmp
+*.temp
+.cache/

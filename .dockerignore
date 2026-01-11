@@ -1,0 +1,62 @@
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+SUMMARY.txt
+
+# Node modules (will be installed in container)
+node_modules/
+
+# Generated files (will be generated in container)
+resume.html
+resume.pdf
+public/
+dist/
+build/
+
+# Dependencies
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+._*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.nova/
+
+# Logs
+*.log
+logs/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Docker files (not needed in image)
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# CI/CD
+.github/
+
+# Source reference
+source.html
