@@ -1,16 +1,14 @@
 # Git
 .git/
 .gitignore
-.gitattributes
 
 # Documentation
 *.md
-SUMMARY.txt
 
-# Node modules (will be installed in container)
+# Node modules
 node_modules/
 
-# Generated files (will be generated in container)
+# Generated files
 resume.html
 resume.pdf
 public/
@@ -20,8 +18,6 @@ build/
 # Dependencies
 package-lock.json
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 
 # OS files
 .DS_Store
@@ -34,7 +30,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
-.nova/
 
 # Logs
 *.log
@@ -45,18 +40,18 @@ logs/
 .env.local
 .env.*.local
 
-# Temporary files
+# Temporary
 *.tmp
 *.temp
 .cache/
 
-# Docker files (not needed in image)
+# Docker files
 Dockerfile
 .dockerignore
-docker-compose.yml
+docker-compose*.yml
 
 # CI/CD
 .github/
 
-# Source reference
-source.html
+# Test/build artifacts
+Makefile
