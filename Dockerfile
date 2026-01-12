@@ -35,8 +35,8 @@ RUN npm install --save-dev \
     @babel/plugin-transform-runtime \
     @babel/runtime
 
-# Install React and styled-components (required by the theme)
-RUN npm install react react-dom styled-components
+# Install React, styled-components, and Puppeteer (required by the theme and PDF generation)
+RUN npm install react react-dom styled-components puppeteer
 
 # Create babel config with automatic JSX runtime
 RUN echo '{ \
@@ -54,14 +54,20 @@ RUN npx babel node_modules/@jsonresume/jsonresume-theme-consultant-polished/src 
     --out-dir node_modules/@jsonresume/jsonresume-theme-consultant-polished/src \
     --config-file ./babel.config.json
 
-# Copy only resume.json
-COPY resume.json .
+# Create symlink so resume-cli can find the theme by short name
+RUN ln -s @jsonresume/jsonresume-theme-consultant-polished node_modules/jsonresume-theme-consultant-polished
 
-# Generate HTML and PDF using the transpiled theme
+# Copy resume.json and PDF generation script
+COPY resume.json .
+COPY generate-pdf.js .
+
+# Generate HTML using the transpiled theme
 RUN resume validate resume.json && \
-    resume export resume.html --resume resume.json --theme @jsonresume/jsonresume-theme-consultant-polished && \
-    (resume export resume.pdf --resume resume.json --theme @jsonresume/jsonresume-theme-consultant-polished || echo "PDF generation failed, creating placeholder") && \
-    if [ ! -f resume.pdf ]; then touch resume.pdf; fi
+    resume export resume.html --resume resume.json --theme consultant-polished
+
+# Generate PDF using custom script with Puppeteer
+RUN node generate-pdf.js resume.json resume.html resume.pdf || \
+    (echo "PDF generation failed, creating placeholder" && touch resume.pdf)
 
 # Production stage with nginx
 FROM nginx:alpine
