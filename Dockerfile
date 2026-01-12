@@ -22,15 +22,15 @@ ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
 
 # Install resume-cli globally and theme locally
 RUN npm install -g resume-cli && \
-    npm install jsonresume-theme-stackoverflow
+    npm install jsonresume-theme-minimal
 
 # Copy only resume.json
 COPY resume.json .
 
 # Generate HTML and PDF (create placeholder PDF if generation fails)
 RUN resume validate resume.json && \
-    resume export resume.html --resume resume.json --theme stackoverflow && \
-    (resume export resume.pdf --resume resume.json --theme stackoverflow || echo "PDF generation failed, creating placeholder") && \
+    resume export resume.html --resume resume.json --theme minimal && \
+    (resume export resume.pdf --resume resume.json --theme minimal || echo "PDF generation failed, creating placeholder") && \
     if [ ! -f resume.pdf ]; then touch resume.pdf; fi
 
 # Production stage with nginx
