@@ -57,13 +57,17 @@ RUN npx babel node_modules/@jsonresume/jsonresume-theme-consultant-polished/src 
 # Create symlink so resume-cli can find the theme by short name
 RUN ln -s @jsonresume/jsonresume-theme-consultant-polished node_modules/jsonresume-theme-consultant-polished
 
-# Copy resume.json and PDF generation script
+# Copy resume.json, PDF generation script, and download button injection script
 COPY resume.json .
 COPY generate-pdf.js .
+COPY inject-download-button.js .
 
 # Generate HTML using the transpiled theme
 RUN resume validate resume.json && \
     resume export resume.html --resume resume.json --theme consultant-polished
+
+# Inject download button into HTML
+RUN node inject-download-button.js resume.html
 
 # Generate PDF using custom script with Puppeteer
 RUN node generate-pdf.js resume.json resume.html resume.pdf || \
