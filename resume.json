@@ -2,13 +2,13 @@
   "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
   "basics": {
     "name": "Bulat Kurbanov",
-    "label": "Backend Developer",
+    "label": "Senior Backend Developer",
     "email": "me@kurbezz.me",
-    "url": "",
-    "summary": "Backend Developer with 7 years of experience in web development, specializing in RESTful APIs, database management, and test-driven development. Committed to continuous self-improvement and active open-source contributor.",
+    "url": "http://kurbezz.me",
+    "summary": "Senior Backend Developer with 8+ years of experience, specializing in high-performance systems (Python, Rust), cloud migrations, and scalable microservices.",
     "location": {
-      "countryCode": "RU",
-      "address": ""
+      "countryCode": "RS",
+      "address": "Serbia, Novi Sad / Remote"
     },
     "profiles": [
       {
@@ -35,13 +35,13 @@
       "startDate": "2024-06-01",
       "summary": "",
       "highlights": [
-        "Design and optimize architectural solutions for a service using React and Node.js, improving performance and maintainability.",
+        "Design and optimize scalable architectural solutions, improving system performance and maintainability through microservices migration.",
         "Develop new microservices with FastAPI, ensuring scalability and efficiency.",
         "Maintain and enhance existing services built with Django and FastAPI, optimizing code quality and performance.",
         "Improve CI/CD pipelines and infrastructure to enhance deployment speed and reliability.",
-        "Orchestrated the end-to-end migration of services and data from AWS to Azure, achieving minimal downtime and ensuring system stability."
+        "Orchestrated the end-to-end migration of infrastructure from AWS to Azure, reducing operational costs and ensuring system stability during the transition."
       ],
-      "url": ""
+      "url": "https://spines.com"
     },
     {
       "name": "Speechki",
@@ -64,9 +64,9 @@
       "endDate": "2021-06-01",
       "summary": "",
       "highlights": [
-        "Led project planning, team mentoring, and code reviews to ensure high-quality development.",
+        "Led a cross-functional team, established engineering standards through mentorship and rigorous code reviews, resulting in higher code quality and 0 critical production bugs.",
         "Managed and optimized software development, testing, and deployment workflows.",
-        "Implemented Agile methodologies, increasing team productivity and collaboration."
+        "Implemented Scrum/Kanban frameworks, reducing time-to-market for key features and improving sprint predictability."
       ],
       "url": ""
     },
@@ -94,7 +94,7 @@
       "summary": "",
       "highlights": [
         "Developed and maintained backend services using Django and Django REST Framework.",
-        "Designed and optimized database schemas in PostgreSQL to improve performance and scalability.",
+        "Optimized PostgreSQL schemas and query performance, enabling the system to handle increased data loads during peak sales periods.",
         "Developed frontend components and user interfaces using JavaScript and Vue.js."
       ],
       "url": ""
@@ -106,20 +106,19 @@
       "endDate": "2019-12-01",
       "summary": "",
       "highlights": [
-        "Developed and maintained backend service using Flask.",
-        "Designed and built an Android application using Java/Kotlin."
+        "Developed a native Android application and Flask backend to automate insulin delivery, improving life quality for diabetic patients."
       ],
       "url": ""
     }
   ],
   "education": [
     {
-      "institution": "Kazan National Research Technical University named after A. N. Tupolev - KAI",
+      "institution": "Kazan National Research Technical University (KNRTU-KAI)",
       "area": "Computational and Applied Mathematics",
       "studyType": "Bachelor of Engineering",
       "startDate": "2016-01-01",
       "endDate": "2018-01-01",
-      "score": "Incompleted",
+      "score": "Undergraduate (2 years completed)",
       "courses": []
     }
   ],
@@ -149,10 +148,10 @@
       ]
     },
     {
-      "name": "Databases",
+      "name": "Databases & SQL",
       "level": "",
       "keywords": [
-        "PostgreSQL (Advanced)",
+        "PostgreSQL (Expert — PL/pgSQL, Optimization)",
         "Redis (Intermediate)"
       ]
     },
@@ -175,7 +174,7 @@
       "name": "Cloud Technologies",
       "level": "",
       "keywords": [
-        "Amazon Web Services (AWS) (Intermediate)"
+        "Amazon Web Services (AWS), Microsoft Azure (Intermediate)"
       ]
     },
     {
@@ -192,12 +191,12 @@
       "name": "ChatGPT voiceover plugin",
       "description": "Developed a plugin for ChatGPT that converts text to speech using the Speechki API.",
       "highlights": [
-        "Quickly launched a B2C service and integrated it with ChatGPT, which became one of the first 15 third-party plugins presented in the ChatGPT plugin store."
+        "Successfully launched a B2C service as one of the first 15 third-party plugins in the official ChatGPT Plugin Store."
       ],
       "keywords": [
         "Python",
         "FastAPI",
-        "SQLAchemy",
+        "SQLAlchemy",
         "Vue"
       ],
       "url": "",
@@ -211,11 +210,12 @@
       "name": "Image Text Drawing Library",
       "description": "Wrote a library for drawing text on images using Rust.",
       "highlights": [
-        "Accelerated image creation with text by 40 times. Excellent support for languages such as Indic, Arabic, Thai and Lao, Khmer, Myanmar, Tibetan, Hangul, Hebrew, and many others."
+        "Developed high-performance Python extensions using PyO3 and Rust, accelerating image creation with text by 40x while maintaining seamless integration with the existing Python codebase. Excellent support for languages such as Indic, Arabic, Thai and Lao, Khmer, Myanmar, Tibetan, Hangul, Hebrew, and many others."
       ],
       "keywords": [
         "Rust",
         "Python",
+        "PyO3",
         "HarfBuzz"
       ],
       "url": "",
@@ -251,8 +251,8 @@
       ],
       "keywords": [
         "Django",
-        "DRF",
-        "Vue",
+        "Django REST Framework (DRF)",
+        "Vue.js",
         "PostgreSQL"
       ],
       "url": "",
@@ -280,7 +280,7 @@
       "type": "application"
     },
     {
-      "name": "Internal Order Managment System",
+      "name": "Internal Order Management System",
       "description": "Developed a system for managing orders and sales.",
       "highlights": [
         "Reduced the number of late order shipments by 30%."
@@ -300,6 +300,6 @@
   "meta": {
     "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json",
     "version": "v1.0.0",
-    "lastModified": "2025-01-27T12:00:00"
+    "lastModified": "2026-01-30T18:00:00"
   }
 }
