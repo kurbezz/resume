@@ -74,22 +74,11 @@ jobs:
           subject-digest: ${{ steps.build.outputs.digest }}
           push-to-registry: true
 
-      - name: Notify deployment webhook
-        # Requires repository secret DEPLOY_WEBHOOK_URL to be set (e.g., https://hooks.example.com/...)
-        if: ${{ github.event_name != 'pull_request' }}
-        env:
-          WEBHOOK_URL: ${{ secrets.DEPLOY_WEBHOOK_URL }}
+  notify:
+    needs: build-and-push
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    steps:
+      - name: Trigger Webhook
         run: |
-          if [ -z "$WEBHOOK_URL" ]; then
-            echo "DEPLOY_WEBHOOK_URL not set; skipping webhook notification."
-            exit 0
-          fi
-
-          echo "Sending deployment notification to webhook"
-          IMAGE="${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}@${{ steps.build.outputs.digest }}"
-          TAGS="${{ steps.meta.outputs.tags }}"
-          REF="${{ github.ref }}"
-          SHA="${{ github.sha }}"
-          payload="{\"status\":\"deployed\",\"image\":\"$IMAGE\",\"tags\":\"$TAGS\",\"ref\":\"$REF\",\"sha\":\"$SHA\"}"
-          curl --fail --silent --show-error --location --max-time 10 -H "Content-Type: application/json" -d "$payload" "$WEBHOOK_URL"
-        continue-on-error: true
+          curl -X POST "${{ secrets.WEBHOOK_URL }}"
